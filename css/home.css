@@ -293,9 +293,37 @@ svg{
     }
 }
 
-@media screen and (max-width: 62.5em){
+@media (max-width: 62.5em){
     .feed{
         margin-left: 0;
         position: relative;
+    }
+}
+
+@media (max-width: 470px){
+    nav{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    
+    #logo{
+        width: 5em;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .menu-home{
+        display: flex;
+    }
+
+    .langs{
+        display: inline-block;
+        
+    }
+
+    .profile{
+        visibility: hidden;
     }
 }

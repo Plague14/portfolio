@@ -1,0 +1,258 @@
+/* Estilo para Notebook */
+@media only screen and (max-width: 1350px){
+	.li-before{
+		margin-left: -50px;
+	}
+}
+
+/* @media only screen and (min-width: 980px) and (max-width:1280px) {
+	.li-before{
+		margin-left: -200px;
+	}
+
+	.li-after{
+		margin-left: -50px;
+	}
+
+	.li-before li, .li-after li{
+		margin: 10px 40px 40px 10px;
+		
+	  }
+} */
+/* Estilo para tablet */
+
+@media only screen and (min-width: 641px) and (max-width: 1440px) {
+	
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	header{
+		height: auto;
+		display: block;
+		padding-bottom: 200px;
+	}
+	
+	.li-before{
+		margin-left: -75px;
+	}
+
+	.li-after{
+		margin-left: -50px;
+	}
+
+
+	.li-before li, .li-after li{
+		margin: 10px 40px 40px 10px;
+		
+	}
+
+	.li-after{
+		display: inline;
+		margin-left: 0px;
+	}
+
+	.li-before{
+		display: inline;
+		margin: 0px;
+	}
+
+	.li-before li{
+		display: inline;
+	}
+	
+	.li-after li{
+		display: inline;
+	}
+
+	.li-before-submenu{
+		display: inline;
+		
+	}
+
+	.li-before-submenu li{
+		display: inline;
+		
+	}
+
+	.li-after-submenu{
+		display: inline;
+		margin: 0px;
+	}
+
+	.li-after-submenu li{
+		display: inline;
+	}
+
+	.logo{
+		margin-top: -200px;
+	}
+
+	.produtos h1{
+		margin-left: 175px;
+		font-size: 30px;
+	}
+
+	.produtos{
+		margin-left: 125px;
+		 display: grid; 
+	}
+
+	.btnTop{
+		right: 80px;
+		margin-top: 50px
+	}
+
+	.btn-zap{
+		right: 80px;
+		z-index: 1000;
+	}
+
+	.floatcarrinho{
+		right: 80px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.floatcarrinho img{
+		margin-top: 60px;
+	}
+
+	.images img{
+		width: 80%;
+	}
+
+	/* Login */
+
+	.divlogin{
+		margin-left: -125px;
+		
+	}
+
+	.panel1{
+		display: none;
+	}
+
+	.panel2-form{
+		padding-bottom: 40px;
+	}
+
+
+}
+
+/* Estilo para smartphone */
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+	header{
+		height: auto;
+		display: block;
+		padding-bottom: 200px;
+	}
+
+	.li-after{
+		display: inline;
+		margin-left: 0px;
+	}
+
+	.li-before{
+		display: inline;
+		margin: 0px;
+	}
+
+	.li-before li{
+		display: inline;
+	}
+	
+	.li-after li{
+		display: inline;
+	}
+
+	.li-before-submenu{
+		display: inline;
+		
+	}
+
+	.li-before-submenu li{
+		display: inline;
+		
+	}
+
+	.li-after-submenu{
+		display: inline;
+		margin: 0px;
+	}
+
+	.li-after-submenu li{
+		display: inline;
+	}
+
+	.logo{
+		margin-top: -200px;
+	}
+
+	.produtos{
+		margin-left: -50px;
+	}
+
+	.produtos h1{
+		margin-left: 125px;
+		font-size: 25px;
+	}
+
+	.images img{
+		width: 80%;
+	}
+
+	.images i{
+		margin: 13px;
+		text-align: center;
+	}
+
+	.btnTop{
+		right: 80px;
+	}
+
+	.btn-zap{
+		right: 80px;
+	}
+
+	.floatcarrinho{
+		right: 80px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.floatcarrinho img{
+		margin-top: 60px;
+	}
+
+	/* Login */
+
+	.panel1{
+		display: none;
+	}
+
+	.panel2{
+		margin-left: -400px;
+	}
+
+	/* table */
+
+	.tabela-listagem{
+		overflow-x: scroll;
+	}
+
+	.tabela{
+		overflow-x: scroll;
+	}
+
+	/* login */ 
+
+	.indicarproduto-produto{
+
+	}
+
+	.divlogin-indicar{
+		width: 20%;
+	}
+}
