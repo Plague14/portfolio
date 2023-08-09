@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/7e6203832a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href='./css/bootstrap.min.css' id="bootstrap-css">
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>AutoFunctions</title>
+        
+        
+        <link rel="stylesheet" href="css/dc.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <div id="preloader"> 
+
+        </div> -->
+        <div class="menua">
+            <div class="logo"><a href="index.html"><img src="images/AZ automatizeit - fundo escuro_V4.png"></a></div>
+            <div class="icon"><i class="fas fa-bars"></i></div>
+            <div class="barra">	
+                <nav>
+                    <a href="autorh.html"><div class="a-autorh">AutoRH</div></a>
+                    <a href="autofinance.html"><div class="a-autofinance">AutoFinance</div></a>
+                    <a href="autocont.html"><div class="a-autocont">AutoCont</div></a>
+                    <a href="autoprojetos.html"><div class="a-autoproj">AutoProjetos</div></a>
+                </nav>
+                <h1>Softwares</h1>
+                <nav>
+                    <a href="listen-setup.html"><div class="a-listen">Listen</div></a>
+                    <a href="audaz-setup.html"><div class="a-audaz">Audaz Investimentos</div></a>
+                </nav>
+                </div>
+            <!--<div class="nome"><p>Flow</p></div>-->
+        </div>
+        <div class="content">
+            <h1 class="title-content">Dashboard</h1>
+            <div class="dados">
+                <p>Faturamento</p>
+                <h1 id="fat"></h1>
+            </div>
+            <div class="dados">
+                <p>Custos</p>
+                <h1 id="custo"></h1>
+            </div>
+            <div class="dados">
+                <p>Lucro</p>
+                <h1 id="lucro"></h1>
+            </div>
+            <div class="dados">
+                <p>Valuation</p>
+                <h1 id="valuation"></h1>
+            </div>
+            <div class="dados">
+                <p>Equity</p>
+                <h1 id="equity"></h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="graficos">
+                <h1>Dados da empresa</h1>
+                <svg id="grafico1" width="620" height="300"></svg>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="graficos">
+                <h1>Relatório Básico</h1>
+                <br>
+                <svg id="grafico2" width="300" height="300"></svg>
+                <br>
+                <br>
+            </div>
+        </div>
+                
+            
+
+
+        <script>
+            /*setInterval(function(){ 
+                
+            }, 2000)
+            document.querySelectorAll('')*/
+        </script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/script2.js"></script>
+        <script>
+            window.onload = function () {
+                $('#grafico1').show(700)
+                $('#grafico2').show(700)
+                $('.dados').css('display', 'inline-block').show(700)
+            }
+
+            const lucro = document.getElementById('lucro')
+            const valuation = document.getElementById('valuation')
+            const equity = document.getElementById('equity')
+            lucro.style.color = color1;
+            valuation.style.color = color1
+            equity.style.color =  color1
+            
+            const fat = document.getElementById('fat')
+            const custo = document.getElementById('custo')
+            fat.style.color = color1;
+            custo.style.color = color2;
+            const fatH2 = document.getElementById('fat-h2')
+            const custoH2 = document.getElementById('custo-h2')
+            /*fatH2.innerText = 'Faturamento'        
+            custoH2.innerText = 'Custo'*/
+
+            $(function() {
+                setString();
+                function setString() {
+                    var fat = " R$ 14.400,00 ";
+                    var custo = " R$ 5.060,73 ";
+                    var lucro = " R$ 9.339,27 ";
+                    var valuation = " R$ 78.644,30 ";
+                    var equity = " R$ 1.120.712,40 "; // discount cash flow pesquisar
+                    setTimeout(setString, 3000);
+                    $('#fat').html(fat);
+                    $('#custo').html(custo);
+                    $('#lucro').html(lucro);
+                    $('#valuation').html(valuation);
+                    $('#equity').html(equity);
+                }
+            });
+            
+            /* preloader */
+
+            var loader = document.getElementById("preloader")
+            window.addEventListener("load", function(){
+                setInterval(function(){ 
+                    loader.style.display = "none";
+                }, 2000)   
+            })
+            
+        </script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

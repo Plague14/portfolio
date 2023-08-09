@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #242424;
+    overflow-x: hidden;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.menua {
+    width: 120px;
+    height: 100%;
+    background-color: black;
+    padding: 0;
+    position: fixed;
+    box-sizing: border-box;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.menua:hover {
+    width: 300px;
+    transition: all 1s;
+}
+
+.menua nav a{
+    display: none;
+    text-decoration: none;   
+}
+
+.menua:hover nav a{
+    display: block;
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.menua:hover .icon{
+    display: none;
+}
+
+.logo {
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.icon{
+    text-align: center;
+}
+
+.icon i{
+    font-size: 4em;
+    color: white;
+}
+
+.link {
+    background-color: #69E781;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.link:hover {
+    background-color: #242424;
+}
+
+.barra h1{
+    color: white;
+    text-align: center;
+    visibility: hidden;
+}
+
+.menua:hover .barra h1{
+    visibility: visible;
+}
+
+.a-autorh{
+    background-color:#673DE6;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-autorh:hover{
+    background-color: #242424;
+    color:#673DE6;
+}
+
+.a-autofinance{
+    background-color:#00A65A;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-autofinance:hover{
+    background-color: #242424;
+    color:#00A65A;
+}
+
+.a-autocont{
+    background-color:#357CF7;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-autocont:hover{
+    background-color: #242424;
+    color:#357CF7;
+}
+
+.a-autoproj{
+    background-color:#F39C12;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-autoproj:hover{
+    background-color: #242424;
+    color:#F39C12;
+}
+
+.a-listen{
+    background-color:#9531C6;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-listen:hover{
+    background-color: #242424;
+    color:#9531C6;
+}
+
+.a-audaz{
+    background-color:#F77600;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s linear;
+    color: white;
+    border: 2px solid #242424;
+}
+
+.a-audaz:hover{
+    background-color: #242424;
+    color:#F77600;
+}
+
+.content{
+    width: 95%;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+.content-autofinance{
+    width: 95%;
+    height: 1000px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    background: radial-gradient(circle, rgba(70,200,84,1) 0%, rgba(24,183,97,1) 100%);
+}
+
+.content-autoprojetos{
+    width: 95%;
+    height: 1000px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    background: radial-gradient(circle, rgba(245,181,73,1) 0%, rgba(243,156,18,1) 100%);
+}
+
+.content-autocont{
+    width: 95%;
+    height: 1000px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    background: radial-gradient(circle, rgba(89,149,249,1) 0%, rgba(53,124,247,1) 100%);
+}
+
+.content-autorh{
+    width: 95%;
+    height: 1000px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    background: radial-gradient(circle, rgba(121,84,233,1) 0%, rgba(103,61,230,1) 100%);
+}
+
+.title-content{
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.dados{
+    display: none;
+    text-align: center;
+    width: auto;
+    margin: 15px;
+    transition: all .5s;
+    height: auto;
+    justify-self: center;
+    box-shadow: 6px 6px 38px 2px rgba(0,0,0,0.32);
+    padding: 25px;
+    animation: op2 1500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    background-color:ghostwhite;
+    border-radius: 20px;
+}
+
+.dados p{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.graficos{
+    width: 40%;
+    display: inline-table;
+    margin: 10px;
+    box-shadow: 6px 6px 38px 2px rgba(0,0,0,0.32);
+    height: auto;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.graficos span{
+    padding: 15px;
+    display: inline-block;
+}
+
+.graficos h2{
+    display: inline-block;
+    margin: 5px;
+}
+
+svg{
+    display: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.borda-redonda{
+    border-radius: 15px;
+    
+}
+
+.content-container{
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    margin: 2%;
+    border-radius: 15px;
+    /* background-color: rgb(250, 250, 250); */
+}
+
+.lancamentos{
+    display: inline-block;
+    text-align: center;
+    font-size: 36px;
+    /* border: 1px solid black; */
+}
+
+.lancamentos td, .lancamentos th{
+    padding: 25px;
+    text-align: center;
+}
+
+.ano{
+    background-color: rgba(53,124,247,1);
+    color: white;
+    text-align: center;
+}
+
+/*------------------------------------------------*/
+
+.arc text { font: 18px sans-serif; text-anchor: middle; fill: white; font-weight: bolder;}
+.arc path { stroke: #fff; transition: all .3s;}
+
+.bar { fill: steelblue; transition: all .3s;}
+.bar:hover { fill: brown; transition: all .3s;}
+.axis--x path { display: none; }
+
+g text{
+    font-size: 14px;
+}
+path:hover{
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.lanc{
+    padding: 15px;
+    color: #fff;
+    font-family: helvetica;
+    font-size: 23px;
+    background-color: #063E7C;
+    border-radius: 20px;
+    border: none;
+    transition: all .3s;
+    margin-top: 20px;
+}
+
+.lanc:hover{
+    background-color: #021a35;
+    transition: all .3s;
+}
+
+.positivo{
+    color: #00B050;
+}
+
+.negativo{
+    color: #F00000;
+}
+
+
+/* animação */
+
+@keyframes op1{
+    to{
+        opacity: 0;
+    }
+    from{
+        opacity: 1;
+    }
+}
+
+@keyframes op2{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+/* preloader */
+
+#preloader{
+    background: #000 url(../images/ezgif.com-gif-maker.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

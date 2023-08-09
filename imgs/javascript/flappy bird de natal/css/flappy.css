@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box
+}
+
+@font-face{
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf')
+}
+
+[wm-flappy]{
+    position: relative;
+    border: 5px solid black;
+    height: 700px;
+    width: 1200px;
+    display: block;
+    margin-top: 100px;
+    background-color: #001637;
+    overflow: hidden;
+    
+}
+
+.natal{
+    background-image: url(../imgs/bckg.jpg);
+    background-position: cover;
+    background-size:100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #246B11, #80E415);
+    border: 2px solid #000; 
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #530504, #C50A0F);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10;
+    color: white;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
+}
+
+.lua{
+    width: 400px;
+    height: 400px;
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(156,156,156,1) 100%); */
+    position: relative;
+    margin: 40px;
+    /* border-radius: 50%; */
+}
+
+
+/* @media only screen and (min-width: 300px){
+
+   
+    [wm-flappy]{
+        width: 100%;
+        position: relative;
+        margin-top: 500px;
+    }
+
+    .natal{
+        background-size: 200% 200%;
+        background-position: top center;
+
+    }
+
+
+
+} */
